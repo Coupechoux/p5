@@ -1,0 +1,13 @@
+
+(firefox-esr:2441): Gtk-WARNING **: 01:47:50.822: Theme parsing error: <data>:1:34: Expected ')' in color definition
+
+(firefox-esr:2441): Gtk-WARNING **: 01:47:50.822: Theme parsing error: <data>:1:77: Expected ')' in color definition
+Sandbox: seccomp sandbox violation: pid 2879, tid 4030, syscall 203, args 4030 128 140265018555904 140265018558928 1 140265762324672.
+Sandbox: seccomp sandbox violation: pid 2879, tid 4031, syscall 203, args 4031 128 140265010163200 140265010166224 1 140265762324672.
+Sandbox: seccomp sandbox violation: pid 2879, tid 4032, syscall 203, args 4032 128 140264930967040 140264930970064 1 140265762324672.
+Sandbox: seccomp sandbox violation: pid 4005, tid 4047, syscall 203, args 4047 128 139995635023360 139995635026384 1 139996331770048.
+Sandbox: seccomp sandbox violation: pid 4005, tid 4048, syscall 203, args 4048 128 139995626630656 139995626633680 1 139996331770048.
+Sandbox: seccomp sandbox violation: pid 4005, tid 4049, syscall 203, args 4049 128 139995618237952 139995618240976 1 139996331770048.
+Sandbox: seccomp sandbox violation: pid 2485, tid 4090, syscall 203, args 4090 128 139981272907264 139981272910288 1 139981952647360.
+Sandbox: seccomp sandbox violation: pid 2485, tid 4092, syscall 203, args 4092 128 139981256121856 139981256124880 1 139981952647360.
+Sandbox: seccomp sandbox violation: pid 2485, tid 4091, syscall 203, args 4091 128 139981264514560 139981264517584 1 139981952647360.

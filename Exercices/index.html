@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Exercices p5</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="../p5.min.js"></script>
+		<script src="../addons/p5.dom.min.js"></script>
+		<script src="../addons/p5.sound.min.js"></script>
+		<script src="sketch.js"></script>
+		</head>
+	<body>
+		<script>
+			function add_example(name) {
+				let s = "<button onclick=\"launch('"+name+"')\" id=\""+name+"_button1\">Afficher</button>";
+				s += "<button onclick=\"stop('"+name+"')\" id=\""+name+"_button2\" style=\"display: none;\">Cacher</button>";
+				document.write(s);
+			}
+		</script>
+		
+		<h1>Des exemples de choses faisables en p5</h1>
+		<p>
+			Cette page contient divers exemples de choses que l'on peut dessiner avec <a href="https://p5js.org/reference">p5</a>. On pourrait imaginer des milliers d'autres cas (on peut s'inspirer de <a href="https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw">YouTube</a>).
+		</p>
+		<p>
+			À moins de vouloir utiliser votre ordinateur en tant que radiateur, penser à bien cacher les exemples quand vous ne les regardez plus. Ça réduira la charge !
+		</p>
+		
+		<div id="circle_on_click" class="container">
+			<h3>Cercle à la souris</h3>
+			<div>
+				<p>
+					Un cercle apparaît là où on <a href="https://p5js.org/reference/#/p5/mouseClicked">clique</a>.
+				</p>
+				<script>add_example("circle_on_click");</script>
+			</div>
+		</div>
+		
+		<div id="circle_on_move" class="container">
+			<h3>Cercle à la souris 2</h3>
+			<div>
+				<p>
+					Un cercle apparaît là où on <a href="https://p5js.org/reference/#/p5/mouseMoved">déplace</a> la souris.
+				</p>
+				<script>add_example("circle_on_move");</script>
+			</div>
+		</div>
+		
+		<div id="fading_circle_on_move" class="container">
+			<h3>Cercle à la souris 2 avec atténuation</h3>
+			<div>
+				<p>
+					Un cercle apparaît là où on déplace la souris. Que faut-il ajouter pour avoir l'effet d'atténuation ?
+				</p>
+				<script>add_example("fading_circle_on_move");</script>
+			</div>
+		</div>
+		
+		<div id="changing_shape" class="container">
+			<h3>Changement de forme</h3>
+			<div>
+				<p>
+					La forme change en fonction de la position de la souris.
+				</p>
+				<script>add_example("changing_shape");</script>
+			</div>
+		</div>
+		
+		<div id="changing_shape_and_size" class="container">
+			<h3>Changement de taille (aussi)</h3>
+			<div>
+				<p>
+					La forme varie de la même manière, mais la taille change aussi.
+				</p>
+				<script>add_example("changing_shape_and_size");</script>
+			</div>
+		</div>
+		
+		<div id="changing_shape_and_size_and_color" class="container">
+			<h3>Changement de couleur (toujours plus)</h3>
+			<div>
+				<p>
+					La forme et la taille sont les mêmes que dans le cas précédent, mais les couleurs évoluent.
+				</p>
+				<script>add_example("changing_shape_and_size_and_color");</script>
+			</div>
+		</div>
+		
+		<div id="changing_shape_and_size_and_color_with_click" class="container">
+			<h3>Changement de changement de couleur (toujoursPlus-ception)</h3>
+			<div>
+				<p>
+					Pareil, mais il y a trois échelles de couleur possibles (on change le rouge, le bleu, ou le vert).
+					Le changement d'échelle se fait au clic.
+				</p>
+				<script>add_example("changing_shape_and_size_and_color_with_click");</script>
+			</div>
+		</div>
+		
+		<div id="complex_shape" class="container">
+			<h3>Forme compliquée</h3>
+			<div>
+				<p>
+					Cette forme est dessinée avec 4 ellipses.
+				</p>
+				<script>add_example("complex_shape");</script>
+			</div>
+		</div>
+		
+		<div id="multiple_complex_shape" class="container">
+			<h3>FormeS compliquéeS</h3>
+			<div>
+				<p>
+					Que faut-il faire pour éviter de réécrire le même code plein de fois ?
+				</p>
+				<script>add_example("multiple_complex_shape");</script>
+			</div>
+		</div>
+		
+		<div id="multiple_complex_shape_multiple_size" class="container">
+			<h3>FoRmEs CoMpLiQuÉeS</h3>
+			<div>
+				<p>
+					Et un argument supplémentaire, un !
+				</p>
+				<script>add_example("multiple_complex_shape_multiple_size");</script>
+			</div>
+		</div>
+		
+		<div id="random_white" class="container">
+			<h3>Des points blancs</h3>
+			<div>
+				<p>
+					Des points blancs apparaissent à des positions aléatoires, sur fond noir.
+				</p>
+				<script>add_example("random_white");</script>
+			</div>
+		</div>
+		
+		<div id="random_random" class="container">
+			<h3>Des points colorés</h3>
+			<div>
+				<p>
+					Comme précédemment, des points apparaissent à des positions aléatoires, sur fond noir. En revanche, cette fois-ci, ils ont une couleur aléatoire.
+				</p>
+				<script>add_example("random_random");</script>
+			</div>
+		</div>
+		
+		<div id="organized_random_v1" class="container">
+			<h3>Des points colorés bien organisés</h3>
+			<div>
+				<p>
+					Pareil qu'avant, mais pas tout à fait :D
+				</p>
+				<script>add_example("organized_random_v1");</script>
+			</div>
+		</div>
+		
+		<div id="organized_random_v2" class="container">
+			<h3>Des points colorés bien organisés, avec plus de couleurs</h3>
+			<div>
+				<p>
+					Pareil qu'avant, mais pas tout à fait++
+				</p>
+				<script>add_example("organized_random_v2");</script>
+			</div>
+		</div>
+		
+		<div id="cylinder" class="container">
+			<h3>Le tour de l'équateur</h3>
+			<div>
+				<p>
+					Quand on sort à droite, on revient à gauche !
+					Une histoire de modulo comme on les aime.
+				</p>
+				<script>add_example("cylinder");</script>
+			</div>
+		</div>
+		
+		<div id="world_tour" class="container">
+			<h3>Le tour du monde</h3>
+			<div>
+				<p>
+					Et quand on va trop bas, on remonte tout en haut !
+				</p>
+				<script>add_example("world_tour");</script>
+			</div>
+		</div>
+		
+		<div id="bouncing" class="container">
+			<h3>Sboing</h3>
+			<div>
+				<p>
+					Deux méthodes (au moins) : 
+					<ul>
+						<li> une seule variable et un modulo et un calcul non trivial. Difficile, mais faisable.</li>
+						<li> deux variables : la position et le déplacement à chaque "tour". Plus simple.</li>
+					</ul>
+				</p>
+				<script>add_example("bouncing");</script>
+			</div>
+		</div>
+		
+		<div id="bouncing_2D" class="container">
+			<h3>Sboing Sboing</h3>
+			<div>
+				<p>
+					C'est la même chose pour l'ordonnée.
+				</p>
+				<script>add_example("bouncing_2D");</script>
+			</div>
+		</div>
+		
+		<div id="bouncing_2D_with_friction" class="container">
+			<h3>SBOING sboing</h3>
+			<div>
+				<p>
+					Les déplacements sont de plus en plus petits. On peut cliquer pour redonner un coup d'accélération.
+					Techniquement, à chaque tour, le nouveau déplacement est 99.5% de l'ancien. Le clic permet de multiplier la vitesse par 5. (Attention, la gestion des collisions étant simpliste, il est facile de faire "bugguer" l'exemple.)
+				</p>
+				<script>add_example("bouncing_2D_with_friction");</script>
+			</div>
+		</div>
+		
+		<div id="square_line" class="container">
+			<h3>Ligne de carrés</h3>
+			<div>
+				<p>
+					Une ligne de carrés noirs sur fond blanc.
+				</p>
+				<script>add_example("square_line");</script>
+			</div>
+		</div>
+		
+		<div id="square_grid" class="container">
+			<h3>Grille de carrés</h3>
+			<div>
+				<p>
+					Une grille de carrés noirs sur fond blanc.
+					Des points gris ? Ah non, promis, il n'y en a pas !
+				</p>
+				<script>add_example("square_grid");</script>
+			</div>
+		</div>
+		
+		<div id="moving_square_grid_horizontal" class="container">
+			<h3>Vague 1D de grille de carrés</h3>
+			<div>
+				<p>
+					[HARDCORE] Ça bouge !
+				</p>
+				<script>add_example("moving_square_grid_horizontal");</script>
+			</div>
+		</div>
+		
+		<div id="moving_square_grid_diagonal" class="container">
+			<h3>Vague 2D de grille de carrés</h3>
+			<div>
+				<p>
+					[HARDCORE] Ça bouge encore plus !
+				</p>
+				<script>add_example("moving_square_grid_diagonal");</script>
+			</div>
+		</div>
+		
+		<script>
+			let tab = {};
+			function launch(name) {
+				let command = "new p5(" + name + ",\"" + name + "\");";
+				tab[name] = eval(command);
+				
+				document.getElementById(name + "_button1").style.display="none";
+				document.getElementById(name + "_button2").style.display="block";
+			}
+			
+			function stop(name) {
+				tab[name].remove();
+				document.getElementById(name + "_button1").style.display="block";
+				document.getElementById(name + "_button2").style.display="none";
+			}
+		</script>
+	</body>
+</html>
